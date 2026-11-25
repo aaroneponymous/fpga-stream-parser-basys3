@@ -1,0 +1,25 @@
+# build outputs
+/build/
+__pycache__/
+
+# Vivado project-generated directories (recreated from parser.xpr)
+parser.cache/
+parser.hw/
+parser.runs/
+parser.sim/
+parser.ip_user_files/
+parser.srcs/utils_1/
+.Xil/
+
+# Vivado / xsim session files
+*.jou
+vivado*.log
+*.backup.log
+*.backup.jou
+*.str
+sim/xsim/xsim.dir/
+sim/xsim/*.wdb
+sim/xsim/*.pb
+sim/xsim/frames.mem
+sim/xsim/xelab.log
+sim/xsim/xvlog.log

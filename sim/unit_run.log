@@ -1,0 +1,112 @@
+=== crc16_tb ===
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aaroneponymous/Projects/fpga/parser/rtl/protocol_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aaroneponymous/Projects/fpga/parser/rtl/crc16_ccitt.sv" into library work
+INFO: [VRFC 10-311] analyzing module crc16_ccitt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aaroneponymous/Projects/fpga/parser/tb/crc16_tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module crc16_tb
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/aaroneponymous/tools/amd/2025.2/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -debug typical -timescale 1ns/1ps crc16_tb -s crc16_tb_sim 
+Multi-threading is on. Using 18 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.protocol_pkg
+Compiling module work.crc16_ccitt
+Compiling module work.crc16_tb
+Built simulation snapshot crc16_tb_sim
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Jul 28 12:57:39 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/crc16_tb_sim/xsim_script.tcl
+# xsim {crc16_tb_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS empty → ffff
+PASS 0x01 → f1d1
+PASS 123456789 → 29b1
+PASS 21B seq → dd0a
+crc16_tb: ALL PASS
+$finish called at time : 425 ns : File "/home/aaroneponymous/Projects/fpga/parser/tb/crc16_tb.sv" Line 101
+exit
+INFO: xsimkernel Simulation Memory Usage: 288416 KB (Peak: 336976 KB), Simulation CPU Usage: 520 ms
+INFO: [Common 17-206] Exiting xsim at Tue Jul 28 12:57:41 2026...
+=== replay_tb ===
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aaroneponymous/Projects/fpga/parser/rtl/protocol_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aaroneponymous/Projects/fpga/parser/rtl/parser_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aaroneponymous/Projects/fpga/parser/rtl/crc16_ccitt.sv" into library work
+INFO: [VRFC 10-311] analyzing module crc16_ccitt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aaroneponymous/Projects/fpga/parser/rtl/msg_table.sv" into library work
+INFO: [VRFC 10-311] analyzing module msg_table
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aaroneponymous/Projects/fpga/parser/rtl/event_fifo.sv" into library work
+INFO: [VRFC 10-311] analyzing module event_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aaroneponymous/Projects/fpga/parser/rtl/parser_core.sv" into library work
+INFO: [VRFC 10-311] analyzing module parser_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aaroneponymous/Projects/fpga/parser/rtl/bram_replay.sv" into library work
+INFO: [VRFC 10-311] analyzing module bram_replay
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aaroneponymous/Projects/fpga/parser/rtl/perf_counters.sv" into library work
+INFO: [VRFC 10-311] analyzing module perf_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aaroneponymous/Projects/fpga/parser/tb/replay_tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module replay_tb
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/aaroneponymous/tools/amd/2025.2/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -debug typical -timescale 1ns/1ps -generic_top INIT_FILE=frames.mem replay_tb -s replay_tb_sim 
+Multi-threading is on. Using 18 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+ERROR: [XSIM 43-3281] Parameter/Generic INIT_FILE  specified in commandline not found in design.
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/aaroneponymous/tools/amd/2025.2/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -debug typical -timescale 1ns/1ps replay_tb -s replay_tb_sim 
+Multi-threading is on. Using 18 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.protocol_pkg
+Compiling package work.parser_pkg
+Compiling module work.bram_replay(INIT_FILE="frames.me...
+Compiling module work.msg_table
+Compiling module work.crc16_ccitt
+Compiling module work.parser_core
+Compiling module work.event_fifo_default
+Compiling module work.perf_counters
+Compiling module work.replay_tb
+Built simulation snapshot replay_tb_sim
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Jul 28 12:57:44 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/replay_tb_sim/xsim_script.tcl
+# xsim {replay_tb_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+replay_tb: msgs=160 crc_err=2 gaps=3 last_lat=23 max_lat=23
+replay_tb: PASS
+$finish called at time : 44405 ns : File "/home/aaroneponymous/Projects/fpga/parser/tb/replay_tb.sv" Line 65
+exit
+INFO: xsimkernel Simulation Memory Usage: 279768 KB (Peak: 337040 KB), Simulation CPU Usage: 510 ms
+INFO: [Common 17-206] Exiting xsim at Tue Jul 28 12:57:46 2026...

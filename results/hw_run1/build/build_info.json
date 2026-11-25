@@ -1,0 +1,14 @@
+{
+  "build_id": "6AF5FA19",
+  "built_at": "2026-11-12T12:43:57-0500",
+  "git_commit": "98652aae71b6ce7d43035543427e1e900c12a920",
+  "git_dirty": false,
+  "vivado": "2025.2",
+  "part": "xc7a35tcpg236-1",
+  "top": "top_bench",
+  "clock": {"name": "sys_clk_pin", "period_ns": 10.000},
+  "wns_ns": 0.348,
+  "whs_ns": 0.032,
+  "bitstream": "top_bench.bit", "bitstream_sha256": "91115ee316b75737f271fe6f1d9130da1f94c7e4408507f6949f3d67d798c684",
+  "probes": "top_bench.ltx", "probes_sha256": "4a55a369c0514eed765a4f043fcd6f5e06f70fd1c9462bd9f0586c9abc09dea7"
+}

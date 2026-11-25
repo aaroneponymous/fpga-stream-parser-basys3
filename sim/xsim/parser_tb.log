@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Jul 28 12:56:42 2026
+# Process ID         : 17207
+# Current directory  : /home/aaroneponymous/Projects/fpga/parser/sim/xsim
+# Command line       : xsim -log parser_tb.log -mode tcl -source {xsim.dir/parser_tb_sim/xsim_script.tcl}
+# Log file           : /home/aaroneponymous/Projects/fpga/parser/sim/xsim/parser_tb.log
+# Journal file       : /home/aaroneponymous/Projects/fpga/parser/sim/xsim/xsim.jou
+# Running On         : razer
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : AMD Ryzen AI 9 365 w/ Radeon 880M
+# CPU Frequency      : 5061.436 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 20
+# Host memory        : 15823 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20118 MB
+# Available Virtual  : 11095 MB
+#-----------------------------------------------------------
+source xsim.dir/parser_tb_sim/xsim_script.tcl
+# xsim {parser_tb_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+Frame0 CRC bytes: 4f 50
+Test1 after 4 clks: ok=1 crc=0 gap=0 resync=0 state=0 ev=0 busy=0
+PASS Test1 single good frame
+PASS Test2 bad CRC + resync (crc=1 resync=0 ok=1)
+PASS Test3 gap-detect (gap=1)
+Streaming 2048 contiguous 23B frames @ 100 MHz model...
+BENCH: samples=2048  p50=23 cyc  p99=23 cyc  thruput~4.35 Mmsg/s  latency_p50~230 ns
+parser_tb: ALL PASS
+$finish called at time : 514145 ns : File "/home/aaroneponymous/Projects/fpga/parser/tb/parser_tb.sv" Line 296
+exit
+INFO: xsimkernel Simulation Memory Usage: 280100 KB (Peak: 337372 KB), Simulation CPU Usage: 550 ms
+INFO: [Common 17-206] Exiting xsim at Tue Jul 28 12:56:44 2026...

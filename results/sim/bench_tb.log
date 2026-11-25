@@ -1,0 +1,207 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Nov 25 02:49:45 2026
+# Process ID         : 8696
+# Current directory  : /home/aaroneponymous/Start-up/Portfolio/fpga_parser/build/sim
+# Command line       : xsim -log /home/aaroneponymous/Start-up/Portfolio/fpga_parser/results/sim/bench_tb.log -mode tcl -source {xsim.dir/bench_tb_sim/xsim_script.tcl}
+# Log file           : /home/aaroneponymous/Start-up/Portfolio/fpga_parser/results/sim/bench_tb.log
+# Journal file       : /home/aaroneponymous/Start-up/Portfolio/fpga_parser/build/sim/xsim.jou
+# Running On         : razer
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.5 LTS
+# Processor Detail   : AMD Ryzen AI 9 365 w/ Radeon 880M
+# CPU Frequency      : 1617.921 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 20
+# Host memory        : 15823 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20118 MB
+# Available Virtual  : 16078 MB
+#-----------------------------------------------------------
+source xsim.dir/bench_tb_sim/xsim_script.tcl
+# xsim {bench_tb_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+WARNING: 0ns : none of the conditions were true for unique case from File:/home/aaroneponymous/Start-up/Portfolio/fpga_parser/rtl/top_basys3.sv:174
+WARNING: 0ns : none of the conditions were true for unique case from File:/home/aaroneponymous/Start-up/Portfolio/fpga_parser/rtl/top_basys3.sv:183
+=== A_cold (corpus_sel=0 drain_div=0 window=1000000 cycles) ===
+equivalence vs top_basys3: 1000000 cycles, 36239 events, 0 mismatching cycles
+ok   window cycles = 1000000
+ok   bytes accepted = 927521
+ok   frames committed = 36239
+ok   events = 36239
+ok   ok events = 34878
+ok   crc_err events = 454
+ok   gap events = 907
+ok   fifo reads = 36238
+ok   lat1 min = 24
+ok   lat1 max = 24
+ok   lat1 sum = 869736
+ok   lat1 n = 36239
+ok   lat2 min = 25
+ok   lat2 max = 25
+ok   lat2 sum = 905950
+ok   lat2 n = 36238
+ok   queue over/underflows = 0
+ok   q1 conservation = 36239
+ok   q2 conservation = 36239
+SUMMARY A_cold events=36239 rate=3.6239 Mmsg/s@100MHz lat1 min/avg/max=24/24.000/24 lat2 min/avg/max=25/25.000/25
+REG A_cold 00 b0e1000151510000
+REG A_cold 01 00000000000f42a3
+REG A_cold 02 00000000000f4240
+REG A_cold 03 00000000000f4240
+REG A_cold 04 00000000000e2721
+REG A_cold 05 0000000000008d8f
+REG A_cold 06 0000000000008d8f
+REG A_cold 07 0000000000008d8f
+REG A_cold 08 000000000000883e
+REG A_cold 09 00000000000001c6
+REG A_cold 0a 000000000000038b
+REG A_cold 0b 0000000000000000
+REG A_cold 0c 0000000000008d8e
+REG A_cold 0d 0000000000011b1e
+REG A_cold 0e 0000000000000001
+REG A_cold 0f 0000000000000000
+REG A_cold 10 0000000000000000
+REG A_cold 11 0000000000000001
+REG A_cold 12 0000000000000018
+REG A_cold 13 0000000000000018
+REG A_cold 14 00000000000d4568
+REG A_cold 15 0000000000008d8f
+REG A_cold 16 0000000000000019
+REG A_cold 17 0000000000000019
+REG A_cold 18 00000000000dd2de
+REG A_cold 19 0000000000008d8e
+REG A_cold 1a 0000000000000001
+REG A_cold 1b 0000000000000000
+REG A_cold 1c 0000000000000021
+REG A_cold 1d 00000000000f423f
+REG A_cold 1e 0000001700008d96
+REG A_cold 1f 0000000000000100
+REG A_cold 58 0000000000008d8f
+REG A_cold 99 0000000000008d8e
+=== B_cold (corpus_sel=1 drain_div=0 window=1000000 cycles) ===
+ok   window cycles = 1000000
+ok   bytes accepted = 920000
+ok   frames committed = 40000
+ok   events = 39999
+ok   ok events = 39775
+ok   crc_err events = 0
+ok   gap events = 224
+ok   fifo reads = 39999
+ok   lat1 min = 24
+ok   lat1 max = 24
+ok   lat1 sum = 959976
+ok   lat1 n = 39999
+ok   lat2 min = 25
+ok   lat2 max = 25
+ok   lat2 sum = 999975
+ok   lat2 n = 39999
+ok   queue over/underflows = 0
+ok   q1 conservation = 40000
+ok   q2 conservation = 39999
+SUMMARY B_cold events=39999 rate=3.9999 Mmsg/s@100MHz lat1 min/avg/max=24/24.000/24 lat2 min/avg/max=25/25.000/25
+REG B_cold 00 b0e1000151510000
+REG B_cold 01 00000000001e87bf
+REG B_cold 02 00000000000f4240
+REG B_cold 03 00000000000f4240
+REG B_cold 04 00000000000e09c0
+REG B_cold 05 0000000000009c40
+REG B_cold 06 0000000000009c40
+REG B_cold 07 0000000000009c3f
+REG B_cold 08 0000000000009b5f
+REG B_cold 09 0000000000000000
+REG B_cold 0a 00000000000000e0
+REG B_cold 0b 0000000000000000
+REG B_cold 0c 0000000000009c3f
+REG B_cold 0d 000000000001387f
+REG B_cold 0e 0000000000000001
+REG B_cold 0f 0000000000000000
+REG B_cold 10 0000000000000000
+REG B_cold 11 0000000000000001
+REG B_cold 12 0000000000000018
+REG B_cold 13 0000000000000018
+REG B_cold 14 00000000000ea5e8
+REG B_cold 15 0000000000009c3f
+REG B_cold 16 0000000000000019
+REG B_cold 17 0000000000000019
+REG B_cold 18 00000000000f4227
+REG B_cold 19 0000000000009c3f
+REG B_cold 1a 0000000000010000
+REG B_cold 1b 0000000000000000
+REG B_cold 1c 0000000000000019
+REG B_cold 1d 00000000000f4227
+REG B_cold 1e 0000001700009c47
+REG B_cold 1f 0000000000000300
+REG B_cold 58 0000000000009c3f
+REG B_cold 99 0000000000009c3f
+=== A_drain31 (corpus_sel=0 drain_div=31 window=1000000 cycles) ===
+ok   window cycles = 1000000
+ok   bytes accepted = 800600
+ok   frames committed = 31282
+ok   events = 31281
+ok   ok events = 30106
+ok   crc_err events = 392
+ok   gap events = 783
+ok   fifo reads = 31249
+ok   lat1 min = 24
+ok   lat1 max = 31
+ok   lat1 sum = 887581
+ok   lat1 n = 31281
+ok   lat2 min = 44
+ok   lat2 max = 1054
+ok   lat2 sum = 30412344
+ok   lat2 n = 31249
+ok   queue over/underflows = 0
+ok   q1 conservation = 31282
+ok   q2 conservation = 31281
+SUMMARY A_drain31 events=31281 rate=3.1281 Mmsg/s@100MHz lat1 min/avg/max=24/28.374/31 lat2 min/avg/max=44/973.226/1054
+REG A_drain31 00 b0e1000151510000
+REG A_drain31 01 00000000002dccdb
+REG A_drain31 02 00000000000f4240
+REG A_drain31 03 00000000000f4240
+REG A_drain31 04 00000000000c3758
+REG A_drain31 05 0000000000007a32
+REG A_drain31 06 0000000000007a32
+REG A_drain31 07 0000000000007a31
+REG A_drain31 08 000000000000759a
+REG A_drain31 09 0000000000000188
+REG A_drain31 0a 000000000000030f
+REG A_drain31 0b 0000000000000000
+REG A_drain31 0c 0000000000007a11
+REG A_drain31 0d 0000000000030ae7
+REG A_drain31 0e 0000000000000001
+REG A_drain31 0f 0000000000021685
+REG A_drain31 10 0000000000097ed7
+REG A_drain31 11 0000000000000020
+REG A_drain31 12 0000000000000018
+REG A_drain31 13 000000000000001f
+REG A_drain31 14 00000000000d8b1d
+REG A_drain31 15 0000000000007a31
+REG A_drain31 16 000000000000002c
+REG A_drain31 17 000000000000041e
+REG A_drain31 18 0000000001d00e38
+REG A_drain31 19 0000000000007a11
+REG A_drain31 1a 0000000000010020
+REG A_drain31 1b 0000000000000000
+REG A_drain31 1c 0000000000000021
+REG A_drain31 1d 00000000000f4236
+REG A_drain31 1e 0000001e00007a37
+REG A_drain31 1f 000000000000011f
+REG A_drain31 58 0000000000002d81
+REG A_drain31 5c 00000000000000c3
+REG A_drain31 5d 0000000000000001
+REG A_drain31 5f 0000000000004bec
+REG A_drain31 ac 0000000000000001
+REG A_drain31 b3 0000000000000001
+REG A_drain31 ba 0000000000000001
+REG A_drain31 bf 0000000000007a0e
+bench_tb: ALL PASS
+$finish called at time : 30021965 ns : File "/home/aaroneponymous/Start-up/Portfolio/fpga_parser/tb/bench_tb.sv" Line 215
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:06 . Memory (MB): peak = 1428.715 ; gain = 0.000 ; free physical = 473 ; free virtual = 15244
+exit
+INFO: xsimkernel Simulation Memory Usage: 284060 KB (Peak: 336524 KB), Simulation CPU Usage: 6750 ms
+INFO: [Common 17-206] Exiting xsim at Wed Nov 25 02:49:53 2026...

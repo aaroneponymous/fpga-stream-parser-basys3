@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Jul 28 12:57:44 2026
+# Process ID         : 18266
+# Current directory  : /home/aaroneponymous/Projects/fpga/parser/sim/xsim
+# Command line       : xsim -log replay_tb.log -mode tcl -source {xsim.dir/replay_tb_sim/xsim_script.tcl}
+# Log file           : /home/aaroneponymous/Projects/fpga/parser/sim/xsim/replay_tb.log
+# Journal file       : /home/aaroneponymous/Projects/fpga/parser/sim/xsim/xsim.jou
+# Running On         : razer
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : AMD Ryzen AI 9 365 w/ Radeon 880M
+# CPU Frequency      : 5040.772 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 20
+# Host memory        : 15823 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20118 MB
+# Available Virtual  : 11068 MB
+#-----------------------------------------------------------
+source xsim.dir/replay_tb_sim/xsim_script.tcl
+# xsim {replay_tb_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+replay_tb: msgs=160 crc_err=2 gaps=3 last_lat=23 max_lat=23
+replay_tb: PASS
+$finish called at time : 44405 ns : File "/home/aaroneponymous/Projects/fpga/parser/tb/replay_tb.sv" Line 65
+exit
+INFO: xsimkernel Simulation Memory Usage: 279768 KB (Peak: 337040 KB), Simulation CPU Usage: 510 ms
+INFO: [Common 17-206] Exiting xsim at Tue Jul 28 12:57:46 2026...

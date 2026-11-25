@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Jul 28 12:57:39 2026
+# Process ID         : 17865
+# Current directory  : /home/aaroneponymous/Projects/fpga/parser/sim/xsim
+# Command line       : xsim -log crc16_tb.log -mode tcl -source {xsim.dir/crc16_tb_sim/xsim_script.tcl}
+# Log file           : /home/aaroneponymous/Projects/fpga/parser/sim/xsim/crc16_tb.log
+# Journal file       : /home/aaroneponymous/Projects/fpga/parser/sim/xsim/xsim.jou
+# Running On         : razer
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : AMD Ryzen AI 9 365 w/ Radeon 880M
+# CPU Frequency      : 5042.330 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 20
+# Host memory        : 15823 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20118 MB
+# Available Virtual  : 11050 MB
+#-----------------------------------------------------------
+source xsim.dir/crc16_tb_sim/xsim_script.tcl
+# xsim {crc16_tb_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS empty → ffff
+PASS 0x01 → f1d1
+PASS 123456789 → 29b1
+PASS 21B seq → dd0a
+crc16_tb: ALL PASS
+$finish called at time : 425 ns : File "/home/aaroneponymous/Projects/fpga/parser/tb/crc16_tb.sv" Line 101
+exit
+INFO: xsimkernel Simulation Memory Usage: 288416 KB (Peak: 336976 KB), Simulation CPU Usage: 520 ms
+INFO: [Common 17-206] Exiting xsim at Tue Jul 28 12:57:41 2026...
